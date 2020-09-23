@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="/">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>OTM Hosted Form Example</title>
+    <script src="https://combinatronics.com/innerdaze/otm-hosted-form-test/master/form-core-embedded.js"></script>
+    <script>
+      function initialise(){
+        formCore({ schemaUrl:'https://formbuilder.stag.onthemoney.net/api/form-schema/5f5207a3ebf983001e534d95' }, document.getElementById("content"));
+      }
+    </script>
+  </head>
+  <body onload="initialise()">
+    <h1>OTM Hosted Form Example</h1>
+    <div style="max-width: 600px" id="content" />
+  </body>
