@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>OTM Hosted Form Example</title>
     <script src="https://combinatronics.com/innerdaze/otm-hosted-form-test/master/form-core-embedded.js"></script>
+    <script src="https://combinatronics.com/innerdaze/otm-hosted-form-test/master/otm-theme.js"></script>
     <script>
       function initialise(){
-        formCore({ schemaUrl:'https://formbuilder.stag.onthemoney.net/api/form-schema/5f5207a3ebf983001e534d95' }, document.getElementById("content"));
+        formCore({ componentMap: formCoreTheme, schemaUrl:'https://formbuilder.stag.onthemoney.net/api/form-schema/5f5207a3ebf983001e534d95' }, document.getElementById("content"));
       }
     </script>
   </head>
